@@ -117,7 +117,10 @@
 <meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/15.png">
 <meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/16.png">
 <meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/18.png">
-<meta property="og:updated_time" content="2019-03-16T04:48:23.331Z">
+<meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/19.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/20.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/21.png">
+<meta property="og:updated_time" content="2019-03-16T04:52:38.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BugkuCTF-web-writeup">
 <meta name="twitter:description" content="BugkuCTF-web-writeup记录一下writeup https://ctf.bugku.com/  Web2 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法： 计算器 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法：1.先打开链接，打开后如下图所示 联想：这难道是简单的输入运">
@@ -469,6 +472,13 @@
 <p>4.保存后   在浏览器   访问  </p>
 <p> flag.bugku.com</p>
 <p><img src="/2019/03/16/BugkuCTF-web-writeup/18.png" alt="img"></p>
+<p>5.在linux下域名解析，修改/etc/hosts文件：</p>
+<p><img src="/2019/03/16/BugkuCTF-web-writeup/19.png" alt="img"></p>
+<p>6.然而可能遇到权限不够，所以不能直接修改。只能用终端升级成root用户提高权限。然后命令打开hosts文件。</p>
+<p><img src="/2019/03/16/BugkuCTF-web-writeup/20.png" alt="img"></p>
+<p>7.添加如下内容</p>
+<p><img src="/2019/03/16/BugkuCTF-web-writeup/21.png" alt="img"></p>
+<p>8.保存之后，再在浏览器里打开flag.bugku.com就能看到flag</p>
 <h4 id="题目地址：-7"><a href="#题目地址：-7" class="headerlink" title="题目地址："></a>题目地址：</h4><h4 id="解题方法：-7"><a href="#解题方法：-7" class="headerlink" title="解题方法："></a>解题方法：</h4><h4 id="题目地址：-8"><a href="#题目地址：-8" class="headerlink" title="题目地址："></a>题目地址：</h4><h4 id="解题方法：-8"><a href="#解题方法：-8" class="headerlink" title="解题方法："></a>解题方法：</h4><h4 id="题目地址：-9"><a href="#题目地址：-9" class="headerlink" title="题目地址："></a>题目地址：</h4><h4 id="解题方法：-9"><a href="#解题方法：-9" class="headerlink" title="解题方法："></a>解题方法：</h4><h4 id="题目地址：-10"><a href="#题目地址：-10" class="headerlink" title="题目地址："></a>题目地址：</h4><h4 id="解题方法：-10"><a href="#解题方法：-10" class="headerlink" title="解题方法："></a>解题方法：</h4>
       
     </div>
