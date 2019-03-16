@@ -259,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://v1lu0.github.io/2019/02/23/心情日记-2019-2-23/">
+    <link itemprop="mainEntityOfPage" href="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="V1lu0">
@@ -278,7 +278,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/02/23/心情日记-2019-2-23/" itemprop="url">心情日记-2019/2/23</a></h1>
+                <a class="post-title-link" href="/2019/03/16/BugkuCTF-web-writeup/" itemprop="url">BugkuCTF-web-writeup</a></h1>
         
 
         <div class="post-meta">
@@ -290,8 +290,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T17:59:33+08:00">
-                2019-02-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-16T11:16:26+08:00">
+                2019-03-16
               </time>
             
 
@@ -300,28 +300,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/心情日记/" itemprop="url" rel="index">
-                    <span itemprop="name">心情日记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -352,14 +330,27 @@
       
         
           
-          ​          
-希望一切安好~~~
-（想写什么，却..）
+          BugkuCTF-web-writeup记录一下writeup
+https://ctf.bugku.com/
 
-          
+1.Web2
+题目地址：地址：http://123.206.87.240:8002/yanzhengma/
+解题方法：
+2.计算器
+题目地址：地址：http://123.206.87.240:8002/yanzhengma/
+解题方法：1.先打开链接，打开后如下图所示
+联想：这难道是简单的输入运算结果吗？
+
+2.输入答案：95
+——&gt;发现只能输入一位数
+然后索性打开源代码
+看看是哪出了问题
+
+3.原来是限制了字符串输入长度（maxlength=”1”）,那我们将它改为2，然后返
+          ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/02/23/心情日记-2019-2-23/#more" rel="contents">
+            <a class="btn" href="/2019/03/16/BugkuCTF-web-writeup/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -732,7 +723,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -743,7 +734,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
