@@ -79,13 +79,13 @@
 
 
 
-<meta name="description" content="BugkuCTF-web-writeup记录一下writeup https://ctf.bugku.com/  Web2 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法： 计算器 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法：1.先打开链接，打开后如下图所示 联想：这难道是简单的输入运">
+<meta name="description" content="BugkuCTF-web-writeup记录一下解题的writeup，很多都是从前辈blog的wiriteup收集的，打算做一个集合，把各方思路集合一起。 &amp;lt;!--more--&amp;gt;  https://ctf.bugku.com/  Web2 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法： 计算器 题目地址：地址：http://12">
 <meta name="keywords" content="bugku,ctf">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BugkuCTF-web-writeup">
 <meta property="og:url" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/index.html">
 <meta property="og:site_name" content="V1lu0&#39;blog">
-<meta property="og:description" content="BugkuCTF-web-writeup记录一下writeup https://ctf.bugku.com/  Web2 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法： 计算器 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法：1.先打开链接，打开后如下图所示 联想：这难道是简单的输入运">
+<meta property="og:description" content="BugkuCTF-web-writeup记录一下解题的writeup，很多都是从前辈blog的wiriteup收集的，打算做一个集合，把各方思路集合一起。 &amp;lt;!--more--&amp;gt;  https://ctf.bugku.com/  Web2 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法： 计算器 题目地址：地址：http://12">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/平台截图.png">
 <meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/web2.png">
@@ -127,10 +127,14 @@
 <meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/26.png">
 <meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/27.png">
 <meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/28.png">
-<meta property="og:updated_time" content="2019-03-16T05:17:13.604Z">
+<meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/29.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/30.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/31.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/32.png">
+<meta property="og:updated_time" content="2019-03-16T05:27:04.412Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BugkuCTF-web-writeup">
-<meta name="twitter:description" content="BugkuCTF-web-writeup记录一下writeup https://ctf.bugku.com/  Web2 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法： 计算器 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法：1.先打开链接，打开后如下图所示 联想：这难道是简单的输入运">
+<meta name="twitter:description" content="BugkuCTF-web-writeup记录一下解题的writeup，很多都是从前辈blog的wiriteup收集的，打算做一个集合，把各方思路集合一起。 &amp;lt;!--more--&amp;gt;  https://ctf.bugku.com/  Web2 题目地址：地址：http://123.206.87.240:8002/yanzhengma/ 解题方法： 计算器 题目地址：地址：http://12">
 <meta name="twitter:image" content="https://v1lu0.github.io/2019/03/16/BugkuCTF-web-writeup/平台截图.png">
 
 
@@ -398,7 +402,8 @@
       
 
       
-        <h1 id="BugkuCTF-web-writeup"><a href="#BugkuCTF-web-writeup" class="headerlink" title="BugkuCTF-web-writeup"></a>BugkuCTF-web-writeup</h1><p>记录一下writeup</p>
+        <h1 id="BugkuCTF-web-writeup"><a href="#BugkuCTF-web-writeup" class="headerlink" title="BugkuCTF-web-writeup"></a>BugkuCTF-web-writeup</h1><p>记录一下解题的writeup，很多都是从前辈blog的wiriteup收集的，打算做一个集合，把各方思路集合一起。</p>
+<p><code>&lt;!--more--&gt;</code> </p>
 <p><a href="https://ctf.bugku.com/" target="_blank" rel="noopener">https://ctf.bugku.com/</a></p>
 <p><img src="/2019/03/16/BugkuCTF-web-writeup/平台截图.png" alt="平台截图"></p>
 <h3 id="Web2"><a href="#Web2" class="headerlink" title="Web2"></a>Web2</h3><p><img src="/2019/03/16/BugkuCTF-web-writeup/web2.png" alt="web2"></p>
@@ -522,8 +527,23 @@
 <p><img src="/2019/03/16/BugkuCTF-web-writeup/28.png" alt="clipboard.png"></p>
 <p>3.url: <code>http://123.206.87.240:8004/index1.php?args=GLOBALS</code></p>
 <h4 id="参考资源-1"><a href="#参考资源-1" class="headerlink" title="参考资源"></a>参考资源</h4><p><a href="http://www.runoob.com/php/php-variables.html" target="_blank" rel="noopener">PHP 变量</a></p>
-<h3 id="web5"><a href="#web5" class="headerlink" title="web5"></a>web5</h3><h4 id="题目地址：-10"><a href="#题目地址：-10" class="headerlink" title="题目地址："></a>题目地址：</h4><p><a href="http://123.206.87.240:8002/web5/" target="_blank" rel="noopener">http://123.206.87.240:8002/web5/</a></p>
-<h4 id="解题方法：-9"><a href="#解题方法：-9" class="headerlink" title="解题方法："></a>解题方法：</h4><h3 id="头等舱"><a href="#头等舱" class="headerlink" title="头等舱"></a>头等舱</h3><h4 id="题目地址：-11"><a href="#题目地址：-11" class="headerlink" title="题目地址："></a>题目地址：</h4><p><a href="http://123.206.87.240:9009/hd.php" target="_blank" rel="noopener">http://123.206.87.240:9009/hd.php</a></p>
+<h3 id="web5"><a href="#web5" class="headerlink" title="web5"></a>web5</h3><p><img src="/2019/03/16/BugkuCTF-web-writeup/29.png" alt="img"></p>
+<h4 id="题目地址：-10"><a href="#题目地址：-10" class="headerlink" title="题目地址："></a>题目地址：</h4><p><a href="http://123.206.87.240:8002/web5/" target="_blank" rel="noopener">http://123.206.87.240:8002/web5/</a></p>
+<h4 id="解题方法：-9"><a href="#解题方法：-9" class="headerlink" title="解题方法："></a>解题方法：</h4><p>1.打开题目后提示jspfuck</p>
+<blockquote>
+<p>jsfuck编码是由8个：<strong>&lt; &gt; + – . , [ ]</strong>字符组成。</p>
+<p>2.右键源代码，将JSfuck代码扔进F12控制台</p>
+</blockquote>
+<p><img src="/2019/03/16/BugkuCTF-web-writeup/30.png" alt="img"></p>
+<p>2.<a href="https://www.baidu.com/s?wd=js%E8%84%9A%E6%9C%AC&amp;tn=24004469_oem_dg&amp;rsv_dl=gh_pl_sl_csd" target="_blank" rel="noopener">js脚本</a>，直接—&gt;F12—&gt;consol 复制进去，输出</p>
+<p><img src="/2019/03/16/BugkuCTF-web-writeup/31.png" alt="img"></p>
+<p>3.得到flag，注意题目提交要求</p>
+<p>4.JSFUCK原理解析：</p>
+<p><a href="https://blog.csdn.net/qq_36539075/article/details/79946099" target="_blank" rel="noopener">https://blog.csdn.net/qq_36539075/article/details/79946099</a></p>
+<p><img src="/2019/03/16/BugkuCTF-web-writeup/32.png" alt="img"></p>
+<p>一个神奇的事情。。。据说这个是一道经典的JS的面试题。。</p>
+<p><strong>[]==![]        TURE</strong></p>
+<h3 id="头等舱"><a href="#头等舱" class="headerlink" title="头等舱"></a>头等舱</h3><h4 id="题目地址：-11"><a href="#题目地址：-11" class="headerlink" title="题目地址："></a>题目地址：</h4><p><a href="http://123.206.87.240:9009/hd.php" target="_blank" rel="noopener">http://123.206.87.240:9009/hd.php</a></p>
 <h4 id="解题方法：-10"><a href="#解题方法：-10" class="headerlink" title="解题方法："></a>解题方法：</h4><h3 id="网站被黑"><a href="#网站被黑" class="headerlink" title="网站被黑"></a>网站被黑</h3><h4 id="题目地址：-12"><a href="#题目地址：-12" class="headerlink" title="题目地址："></a>题目地址：</h4><p><a href="http://123.206.87.240:8002/webshell/" target="_blank" rel="noopener">http://123.206.87.240:8002/webshell/</a></p>
 <h4 id="解题方法：-11"><a href="#解题方法：-11" class="headerlink" title="解题方法："></a>解题方法：</h4><h3 id="管理员系统"><a href="#管理员系统" class="headerlink" title="管理员系统"></a>管理员系统</h3><h4 id="题目地址：-13"><a href="#题目地址：-13" class="headerlink" title="题目地址："></a>题目地址：</h4><p><a href="http://123.206.31.85:1003/" target="_blank" rel="noopener">http://123.206.31.85:1003/</a></p>
 <h4 id="解题方法：-12"><a href="#解题方法：-12" class="headerlink" title="解题方法："></a>解题方法：</h4><h3 id="web4"><a href="#web4" class="headerlink" title="web4"></a>web4</h3><h4 id="题目地址：-14"><a href="#题目地址：-14" class="headerlink" title="题目地址："></a>题目地址：</h4><p><a href="http://123.206.87.240:8002/web4/" target="_blank" rel="noopener">http://123.206.87.240:8002/web4/</a></p>
