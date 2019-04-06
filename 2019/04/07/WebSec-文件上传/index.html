@@ -88,8 +88,8 @@
 <meta property="og:description" content="|WebSec–文件上传 文件上传漏洞是渗透测试用得最多的一个漏洞，毕竟它能方便快捷直接的获取服务器的权限。 这节我们所讲的就是如果黑客们如何才能玩好文件上传漏洞以及程序员们如何才防护这种危险漏洞？ –BY:V1lu0  |文件类型检测绕过 ——更改请求绕过 ——Magic检测绕过 ——后缀绕过 ——系统命名绕过 —— .user.ini ——文件包含 ——配合操作系统文件命令规则 ——竞争上传绕">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://v1lu0.github.io/2019/04/07/WebSec-文件上传/解析漏洞.jpg">
-<meta property="og:image" content="https://v1lu0.github.io/2019/04/07/20140706214035015.jpg">
-<meta property="og:updated_time" content="2019-04-06T17:47:22.883Z">
+<meta property="og:image" content="https://v1lu0.github.io/2019/04/07/WebSec-文件上传/20140706214035015.jpg">
+<meta property="og:updated_time" content="2019-04-06T17:50:05.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WebSec--文件上传">
 <meta name="twitter:description" content="|WebSec–文件上传 文件上传漏洞是渗透测试用得最多的一个漏洞，毕竟它能方便快捷直接的获取服务器的权限。 这节我们所讲的就是如果黑客们如何才能玩好文件上传漏洞以及程序员们如何才防护这种危险漏洞？ –BY:V1lu0  |文件类型检测绕过 ——更改请求绕过 ——Magic检测绕过 ——后缀绕过 ——系统命名绕过 —— .user.ini ——文件包含 ——配合操作系统文件命令规则 ——竞争上传绕">
@@ -484,7 +484,7 @@
 <p>1.该解析漏洞利用需两个条件：</p>
 <p>php.ini里cgi.fix_pathinfo=1(默认为1)</p>
 <p>2.在”Handler Mapping”中取消勾选以下内容：</p>
-<p><img src="/2019/04/07/WebSec-文件上传/../20140706214035015.jpg" alt="img"></p>
+<p><img src="/2019/04/07/WebSec-文件上传/./20140706214035015.jpg" alt="img"></p>
 </blockquote>
 <h3 id="apache解析漏洞"><a href="#apache解析漏洞" class="headerlink" title="|apache解析漏洞"></a>|apache解析漏洞</h3><p><strong>漏洞原理</strong>：Apache 解析文件的规则是从右到左开始判断解析,如果后缀名为不可识别文件解析,就再往左判断。比如 test.php.owf.rar “.owf”和”.rar” 这两种后缀是apache不可识别解析,apache就会把wooyun.php.owf.rar解析成php。</p>
 <p><strong>漏洞形式</strong>：<a href="http://www.xxxx.xxx.com/test.php.php123" target="_blank" rel="noopener">www.xxxx.xxx.com/test.php.php123</a></p>
