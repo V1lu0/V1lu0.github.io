@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="通信原理,">
 
 
 
@@ -79,25 +79,26 @@
 
 
 
-<meta name="description" content="title: 通信原理之信息度量copyright: truedate: 2019-05-28 22:30:48tags: [通信原理]categories: 通讯原理typora-root-url: 通信原理之信息度量 |通信原理之信息度量我们需要get下面这些东西：  [+]掌握信息的内涵和离散信源平均信息量的计算方法  [+]信息及其度量（1）问：谁接收信息？答:观察者  （2）信息=&amp;gt">
+<meta name="description" content="|通信原理之信息度量我们需要get下面这些东西：  [+]掌握信息的内涵和离散信源平均信息量的计算方法  [+]信息及其度量（1）问：谁接收信息？答:观察者  （2）信息=&amp;gt;消息=&amp;gt;信号   【这个是层层递进的】  （3）问：信息量I和信息出现概率P(x)关系？答：I大P(x)小，同理I小P(x)大  例子：突然一个不地震的地方地震了（小概率事件），这个消息信息量就很大；假设：今天大太">
+<meta name="keywords" content="通信原理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="V1lu0&#39;blog">
+<meta property="og:title" content="通信原理之信息度量">
 <meta property="og:url" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/index.html">
 <meta property="og:site_name" content="V1lu0&#39;blog">
-<meta property="og:description" content="title: 通信原理之信息度量copyright: truedate: 2019-05-28 22:30:48tags: [通信原理]categories: 通讯原理typora-root-url: 通信原理之信息度量 |通信原理之信息度量我们需要get下面这些东西：  [+]掌握信息的内涵和离散信源平均信息量的计算方法  [+]信息及其度量（1）问：谁接收信息？答:观察者  （2）信息=&amp;gt">
+<meta property="og:description" content="|通信原理之信息度量我们需要get下面这些东西：  [+]掌握信息的内涵和离散信源平均信息量的计算方法  [+]信息及其度量（1）问：谁接收信息？答:观察者  （2）信息=&amp;gt;消息=&amp;gt;信号   【这个是层层递进的】  （3）问：信息量I和信息出现概率P(x)关系？答：I大P(x)小，同理I小P(x)大  例子：突然一个不地震的地方地震了（小概率事件），这个消息信息量就很大；假设：今天大太">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/谁接收信息.png">
-<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/消息消息信号.png">
-<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/信息的度量.png">
-<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/E:/hexo/source/_posts/通信原理之信息度量和通讯系统的性能指标/信息统计描述.png">
-<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/E:/hexo/source/_posts/通信原理之信息度量和通讯系统的性能指标/平均信息量.png">
-<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/E:/hexo/source/_posts/通信原理之信息度量和通讯系统的性能指标/题目1.png">
-<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/E:/hexo/source/_posts/通信原理之信息度量和通讯系统的性能指标/答案.png">
-<meta property="og:updated_time" content="2019-05-28T16:12:58.588Z">
+<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/%E8%B0%81%E6%8E%A5%E6%94%B6%E4%BF%A1%E6%81%AF.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/%E6%B6%88%E6%81%AF%E6%B6%88%E6%81%AF%E4%BF%A1%E5%8F%B7.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/%E4%BF%A1%E6%81%AF%E7%9A%84%E5%BA%A6%E9%87%8F.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/信息统计描述.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/平均信息量.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/题目1.png">
+<meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/答案.png">
+<meta property="og:updated_time" content="2019-05-28T16:24:03.418Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="V1lu0&#39;blog">
-<meta name="twitter:description" content="title: 通信原理之信息度量copyright: truedate: 2019-05-28 22:30:48tags: [通信原理]categories: 通讯原理typora-root-url: 通信原理之信息度量 |通信原理之信息度量我们需要get下面这些东西：  [+]掌握信息的内涵和离散信源平均信息量的计算方法  [+]信息及其度量（1）问：谁接收信息？答:观察者  （2）信息=&amp;gt">
-<meta name="twitter:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/谁接收信息.png">
+<meta name="twitter:title" content="通信原理之信息度量">
+<meta name="twitter:description" content="|通信原理之信息度量我们需要get下面这些东西：  [+]掌握信息的内涵和离散信源平均信息量的计算方法  [+]信息及其度量（1）问：谁接收信息？答:观察者  （2）信息=&amp;gt;消息=&amp;gt;信号   【这个是层层递进的】  （3）问：信息量I和信息出现概率P(x)关系？答：I大P(x)小，同理I小P(x)大  例子：突然一个不地震的地方地震了（小概率事件），这个消息信息量就很大；假设：今天大太">
+<meta name="twitter:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/%E8%B0%81%E6%8E%A5%E6%94%B6%E4%BF%A1%E6%81%AF.png">
 
 
 
@@ -142,7 +143,7 @@
         }
     })();
 </script>
-  <title> | V1lu0'blog</title>
+  <title>通信原理之信息度量 | V1lu0'blog</title>
   
 
 
@@ -287,7 +288,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">通信原理之信息度量</h1>
         
 
         <div class="post-meta">
@@ -299,7 +300,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-28T22:30:49+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-28T22:30:48+08:00">
                 2019-05-28
               </time>
             
@@ -309,6 +310,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/通讯原理/" itemprop="url" rel="index">
+                    <span itemprop="name">通讯原理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -342,22 +365,21 @@
       
 
       
-        <p>title: 通信原理之信息度量<br>copyright: true<br>date: 2019-05-28 22:30:48<br>tags: [通信原理]<br>categories: 通讯原理<br>typora-root-url: 通信原理之信息度量</p>
-<h1 id="通信原理之信息度量"><a href="#通信原理之信息度量" class="headerlink" title="|通信原理之信息度量"></a>|通信原理之信息度量</h1><p>我们需要get下面这些东西：</p>
+        <h1 id="通信原理之信息度量"><a href="#通信原理之信息度量" class="headerlink" title="|通信原理之信息度量"></a>|通信原理之信息度量</h1><p>我们需要get下面这些东西：</p>
 <blockquote>
 <p>[+]掌握<strong>信息的内涵</strong>和<strong>离散信源平均信息量</strong>的计算方法</p>
 </blockquote>
 <h2 id="信息及其度量"><a href="#信息及其度量" class="headerlink" title="[+]信息及其度量"></a>[+]信息及其度量</h2><p>（1）问：谁接收信息？答:观察者</p>
-<p><img src="/2019/05/28/通信原理之信息度量/谁接收信息.png" alt="谁接收信息"></p>
+<p><img src="/2019/05/28/通信原理之信息度量/%E8%B0%81%E6%8E%A5%E6%94%B6%E4%BF%A1%E6%81%AF.png" alt="谁接收信息"></p>
 <p>（2）信息=&gt;消息=&gt;信号   【这个是层层递进的】</p>
-<p><img src="/2019/05/28/通信原理之信息度量/消息消息信号.png" alt="消息消息信号"></p>
+<p><img src="/2019/05/28/通信原理之信息度量/%E6%B6%88%E6%81%AF%E6%B6%88%E6%81%AF%E4%BF%A1%E5%8F%B7.png" alt="消息消息信号"></p>
 <p>（3）问：信息量<strong><em>I</em></strong>和信息出现概率<strong><em>P(x)</em></strong>关系？答：<strong><em>I</em></strong>大<strong><em>P(x)</em></strong>小，同理<strong>I</strong>小<strong><em>P(x)</em></strong>大</p>
 <blockquote>
 <p>例子：突然一个不地震的地方地震了（小概率事件），这个消息信息量就很大；假设：今天大太阳，你给别人聊天的时候你说今天大太阳（what，别人瞎啊，自己不知道啊，这个就是大概率事件），所以信息量就会自然而然的很小。</p>
 </blockquote>
 <p>$$<br>I=I[P(x)]<br>$$</p>
 <p>$$<br>I[P(x_1)P(x_2)…]=I[P(x_1)]+I[P(x_2)]+…<br>$$</p>
-<p><img src="/2019/05/28/通信原理之信息度量/信息的度量.png" alt="信息的度量"></p>
+<p><img src="/2019/05/28/通信原理之信息度量/%E4%BF%A1%E6%81%AF%E7%9A%84%E5%BA%A6%E9%87%8F.png" alt="信息的度量"></p>
 <p>(4)问：信息统计描述公式？信息量单位？答：公式、单位见下文<br>$$<br>I=log_a\frac{1}{P(x)}=-log_a^{P(x)}<br>$$</p>
 <blockquote>
 <p>单位：</p>
@@ -365,11 +387,11 @@
 <p>[+] a = e  单位=&gt;奈特(nat)</p>
 <p>[+] a = 10 单位=&gt;哈特莱(Hartley)</p>
 </blockquote>
-<p><img src="/2019/05/28/通信原理之信息度量/E:/hexo\source\_posts\通信原理之信息度量和通讯系统的性能指标\信息统计描述.png" alt="信息统计描述"></p>
-<p>(5)信息源的熵==平均信息量<br>$$<br>熵=P(x_1)I_1+P(x_2)I_2+…+p(x_n)I_n<br>$$<br><img src="/2019/05/28/通信原理之信息度量/E:/hexo\source\_posts\通信原理之信息度量和通讯系统的性能指标\平均信息量.png" alt="平均信息量"></p>
+<p><img src="/2019/05/28/通信原理之信息度量/信息统计描述.png" alt="信息统计描述"></p>
+<p>(5)信息源的熵==平均信息量<br>$$<br>熵=P(x_1)I_1+P(x_2)I_2+…+p(x_n)I_n<br>$$<br><img src="/2019/05/28/通信原理之信息度量/平均信息量.png" alt="平均信息量"></p>
 <p>(6)例题={admin收到了一道题，请查看，嘿嘿！}</p>
-<p><img src="/2019/05/28/通信原理之信息度量/E:/hexo\source\_posts\通信原理之信息度量和通讯系统的性能指标\题目1.png" alt="题目1"></p>
-<p>解：题目答案，解题~<br>$$<br>I=0出现次数<em>概率倒数+1出现次数</em>概率倒数+3出现次数*概率倒数<br>$$<br><img src="/2019/05/28/通信原理之信息度量/E:/hexo\source\_posts\通信原理之信息度量和通讯系统的性能指标\答案.png" alt="答案"></p>
+<p><img src="/2019/05/28/通信原理之信息度量/题目1.png" alt="题目1"></p>
+<p>解：题目答案，解题~<br>$$<br>I=0出现次数<em>概率倒数+1出现次数</em>概率倒数+3出现次数*概率倒数<br>$$<br><img src="/2019/05/28/通信原理之信息度量/答案.png" alt="答案"></p>
 <p>算数平均：<br>$$<br>I_average=I/57<br>$$<br>平均信息量：</p>
 <p>求H(x)，自己试试！！！</p>
 
@@ -386,6 +408,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/通信原理/" rel="tag"># 通信原理</a>
+          
+        </div>
       
 
       
@@ -494,7 +522,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -505,7 +533,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
