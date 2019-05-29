@@ -94,7 +94,7 @@
 <meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/平均信息量.png">
 <meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/题目1.png">
 <meta property="og:image" content="https://v1lu0.github.io/2019/05/28/通信原理之信息度量/答案.png">
-<meta property="og:updated_time" content="2019-05-28T16:25:44.838Z">
+<meta property="og:updated_time" content="2019-05-29T01:39:26.328Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="通信原理之信息度量">
 <meta name="twitter:description" content="|通信原理之信息度量我们需要get下面这些东西：  [+]掌握信息的内涵和离散信源平均信息量的计算方法  [+]信息及其度量（1）问：谁接收信息？答:观察者  （2）信息=&amp;gt;消息=&amp;gt;信号   【这个是层层递进的】  （3）问：信息量I和信息出现概率P(x)关系？答：I大P(x)小，同理I小P(x)大  例子：突然一个不地震的地方地震了（小概率事件），这个消息信息量就很大；假设：今天大太">
@@ -377,22 +377,29 @@
 <blockquote>
 <p>例子：突然一个不地震的地方地震了（小概率事件），这个消息信息量就很大；假设：今天大太阳，你给别人聊天的时候你说今天大太阳（what，别人瞎啊，自己不知道啊，这个就是大概率事件），所以信息量就会自然而然的很小。</p>
 </blockquote>
-<p>$$<br>I=I[P(x)]<br>$$</p>
-<p>$$<br>I[P(x_1)P(x_2)…]=I[P(x_1)]+I[P(x_2)]+…<br>$$</p>
-<p><img src="/2019/05/28/通信原理之信息度量/%E4%BF%A1%E6%81%AF%E7%9A%84%E5%BA%A6%E9%87%8F.png" alt="信息的度量"></p>
-<p>(4)问：信息统计描述公式？信息量单位？答：公式、单位见下文<br>$$<br>I=log_a\frac{1}{P(x)}=-log_a^{P(x)}<br>$$</p>
-<blockquote>
+<script type="math/tex; mode=display">
+I=I[P(x)]</script><script type="math/tex; mode=display">
+I[P(x_1)P(x_2)...]=I[P(x_1)]+I[P(x_2)]+...</script><p><img src="/2019/05/28/通信原理之信息度量/%E4%BF%A1%E6%81%AF%E7%9A%84%E5%BA%A6%E9%87%8F.png" alt="信息的度量"></p>
+<p>(4)问：信息统计描述公式？信息量单位？答：公式、单位见下文</p>
+<script type="math/tex; mode=display">
+I=log_a\frac{1}{P(x)}=-log_a^{P(x)}</script><blockquote>
 <p>单位：</p>
 <p>[+] a = 2  单位=&gt;比特(bit)</p>
 <p>[+] a = e  单位=&gt;奈特(nat)</p>
 <p>[+] a = 10 单位=&gt;哈特莱(Hartley)</p>
 </blockquote>
 <p><img src="/2019/05/28/通信原理之信息度量/信息统计描述.png" alt="信息统计描述"></p>
-<p>(5)信息源的熵==平均信息量<br>$$<br>熵=P(x_1)I_1+P(x_2)I_2+…+p(x_n)I_n<br>$$<br><img src="/2019/05/28/通信原理之信息度量/平均信息量.png" alt="平均信息量"></p>
+<p>(5)信息源的熵==平均信息量</p>
+<script type="math/tex; mode=display">
+熵=P(x_1)I_1+P(x_2)I_2+...+p(x_n)I_n</script><p><img src="/2019/05/28/通信原理之信息度量/平均信息量.png" alt="平均信息量"></p>
 <p>(6)例题={admin收到了一道题，请查看，嘿嘿！}</p>
 <p><img src="/2019/05/28/通信原理之信息度量/题目1.png" alt="题目1"></p>
-<p>解：题目答案，解题~<br>$$<br>I=0出现次数<em>概率倒数+1出现次数</em>概率倒数+3出现次数*概率倒数<br>$$<br><img src="/2019/05/28/通信原理之信息度量/答案.png" alt="答案"></p>
-<p>算数平均：<br>$$<br>I_average=I/57<br>$$<br>平均信息量：</p>
+<p>解：题目答案，解题~</p>
+<script type="math/tex; mode=display">
+I=0出现次数*概率倒数+1出现次数*概率倒数+3出现次数*概率倒数</script><p><img src="/2019/05/28/通信原理之信息度量/答案.png" alt="答案"></p>
+<p>算数平均：</p>
+<script type="math/tex; mode=display">
+I_average=I/57</script><p>平均信息量：</p>
 <p>求H(x)，自己试试！！！</p>
 
       
@@ -816,6 +823,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

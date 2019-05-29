@@ -364,8 +364,9 @@
 
 例子：突然一个不地震的地方地震了（小概率事件），这个消息信息量就很大；假设：今天大太阳，你给别人聊天的时候你说今天大太阳（what，别人瞎啊，自己不知道啊，这个就是大概率事件），所以信息量就会自然而然的很小。
 
-$$I=I[P(x)]$$
-$$I[P(x_1)P(x_2)…]=I[P
+
+I=I[P(x)]
+I[P(x_1)P(x_2)...]=I[P(x_
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -794,10 +795,10 @@ CTF（Capture The Flag）中文一般译作夺旗赛，在网络安全领域中�
       
         
           
-          |WebSec–文件上传
+          |WebSec—文件上传
 文件上传漏洞是渗透测试用得最多的一个漏洞，毕竟它能方便快捷直接的获取服务器的权限。
 这节我们所讲的就是如果黑客们如何才能玩好文件上传漏洞以及程序员们如何才防护这种危险漏洞？
-–BY:V1lu0
+—BY:V1lu0
 
 |文件类型检测绕过
 ——更改请求绕过
@@ -1124,7 +1125,7 @@ CTF（Capture The Flag）中文一般译作夺旗赛，在网络安全领域中�
 这次北邮杯活生生的打成了oi杯
 坐看神仙打架
 oier &lt;==&gt;ctfer
-​                               ——个人想法
+​                               ———个人想法
 下面有题目顺序有点乱！
 
 
@@ -1461,7 +1462,7 @@ TCP-IP详解卷三：TCP事务协议
 这次北邮杯活生生的打成了oi杯
 坐看神仙打架
 oier &lt;==&gt;ctfer
-​                               ——个人想法
+​                               ———个人想法
 
 $第一题
 
@@ -2218,6 +2219,28 @@ Web2
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

@@ -79,20 +79,20 @@
 
 
 
-<meta name="description" content="|WebSec–文件上传 文件上传漏洞是渗透测试用得最多的一个漏洞，毕竟它能方便快捷直接的获取服务器的权限。 这节我们所讲的就是如果黑客们如何才能玩好文件上传漏洞以及程序员们如何才防护这种危险漏洞？ –BY:V1lu0  |文件类型检测绕过 ——更改请求绕过 ——Magic检测绕过 ——后缀绕过 ——系统命名绕过 —— .user.ini ——文件包含 ——配合操作系统文件命令规则 ——竞争上传绕">
+<meta name="description" content="|WebSec—文件上传 文件上传漏洞是渗透测试用得最多的一个漏洞，毕竟它能方便快捷直接的获取服务器的权限。 这节我们所讲的就是如果黑客们如何才能玩好文件上传漏洞以及程序员们如何才防护这种危险漏洞？ —BY:V1lu0  |文件类型检测绕过 ——更改请求绕过 ——Magic检测绕过 ——后缀绕过 ——系统命名绕过 —— .user.ini ——文件包含 ——配合操作系统文件命令规则 ——竞争上传绕">
 <meta name="keywords" content="WebSec,文件上传">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WebSec--文件上传">
 <meta property="og:url" content="https://v1lu0.github.io/2019/04/07/WebSec-文件上传/index.html">
 <meta property="og:site_name" content="V1lu0&#39;blog">
-<meta property="og:description" content="|WebSec–文件上传 文件上传漏洞是渗透测试用得最多的一个漏洞，毕竟它能方便快捷直接的获取服务器的权限。 这节我们所讲的就是如果黑客们如何才能玩好文件上传漏洞以及程序员们如何才防护这种危险漏洞？ –BY:V1lu0  |文件类型检测绕过 ——更改请求绕过 ——Magic检测绕过 ——后缀绕过 ——系统命名绕过 —— .user.ini ——文件包含 ——配合操作系统文件命令规则 ——竞争上传绕">
+<meta property="og:description" content="|WebSec—文件上传 文件上传漏洞是渗透测试用得最多的一个漏洞，毕竟它能方便快捷直接的获取服务器的权限。 这节我们所讲的就是如果黑客们如何才能玩好文件上传漏洞以及程序员们如何才防护这种危险漏洞？ —BY:V1lu0  |文件类型检测绕过 ——更改请求绕过 ——Magic检测绕过 ——后缀绕过 ——系统命名绕过 —— .user.ini ——文件包含 ——配合操作系统文件命令规则 ——竞争上传绕">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://v1lu0.github.io/2019/04/07/WebSec-文件上传/解析漏洞.jpg">
 <meta property="og:image" content="https://v1lu0.github.io/2019/04/07/WebSec-文件上传/20140706214035015.jpg">
 <meta property="og:updated_time" content="2019-04-06T17:50:05.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WebSec--文件上传">
-<meta name="twitter:description" content="|WebSec–文件上传 文件上传漏洞是渗透测试用得最多的一个漏洞，毕竟它能方便快捷直接的获取服务器的权限。 这节我们所讲的就是如果黑客们如何才能玩好文件上传漏洞以及程序员们如何才防护这种危险漏洞？ –BY:V1lu0  |文件类型检测绕过 ——更改请求绕过 ——Magic检测绕过 ——后缀绕过 ——系统命名绕过 —— .user.ini ——文件包含 ——配合操作系统文件命令规则 ——竞争上传绕">
+<meta name="twitter:description" content="|WebSec—文件上传 文件上传漏洞是渗透测试用得最多的一个漏洞，毕竟它能方便快捷直接的获取服务器的权限。 这节我们所讲的就是如果黑客们如何才能玩好文件上传漏洞以及程序员们如何才防护这种危险漏洞？ —BY:V1lu0  |文件类型检测绕过 ——更改请求绕过 ——Magic检测绕过 ——后缀绕过 ——系统命名绕过 —— .user.ini ——文件包含 ——配合操作系统文件命令规则 ——竞争上传绕">
 <meta name="twitter:image" content="https://v1lu0.github.io/2019/04/07/WebSec-文件上传/解析漏洞.jpg">
 
 
@@ -360,10 +360,10 @@
       
 
       
-        <h1 id="WebSec–文件上传"><a href="#WebSec–文件上传" class="headerlink" title="|WebSec–文件上传"></a>|WebSec–文件上传</h1><blockquote>
+        <h1 id="WebSec—文件上传"><a href="#WebSec—文件上传" class="headerlink" title="|WebSec—文件上传"></a>|WebSec—文件上传</h1><blockquote>
 <p>文件上传漏洞是渗透测试用得最多的一个漏洞，毕竟它能方便快捷直接的获取服务器的权限。</p>
 <p>这节我们所讲的就是如果黑客们如何才能玩好文件上传漏洞以及程序员们如何才防护这种危险漏洞？</p>
-<p>–BY:V1lu0</p>
+<p>—BY:V1lu0</p>
 </blockquote>
 <h2 id="文件类型检测绕过"><a href="#文件类型检测绕过" class="headerlink" title="|文件类型检测绕过"></a>|文件类型检测绕过</h2><blockquote>
 <p>——更改请求绕过</p>
@@ -382,6 +382,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">POST /upload.php HTTP/1.1</span><br><span class="line">TE: deflate,gzip;q=0.3</span><br><span class="line">Connection: TE, close</span><br><span class="line">Host: localhost</span><br><span class="line">User-Agent: libwww-perl/5.803</span><br><span class="line">Content-Type: multipart/form-data; boundary=xsxsx</span><br><span class="line">Content-Length: 155</span><br><span class="line">--xsxsx</span><br><span class="line">Content-Disposition: form-data; name=&quot;userfile&quot;; filename=&quot;V1lu0.php&quot;</span><br><span class="line">Content-Type: image/gif (原为 Content-Type: text/plain)</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">phpinfo();</span><br><span class="line">?&gt;</span><br><span class="line">--xsxsx-</span><br></pre></td></tr></table></figure>
 <h3 id="Magic检测绕过"><a href="#Magic检测绕过" class="headerlink" title="|Magic检测绕过"></a>|Magic检测绕过</h3><p>情况：使用文件头来检测文件类型</p>
 <p>利用：对应的字节以绕过检查</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -412,6 +413,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <blockquote>
 <p>举例：</p>
 </blockquote>
@@ -427,7 +429,7 @@
 </blockquote>
 <h3 id="系统命名绕过"><a href="#系统命名绕过" class="headerlink" title="|系统命名绕过"></a>|系统命名绕过</h3><blockquote>
 <p>在<strong>Windows系统</strong>中，上传<code>index.php.</code>会重命名为<code>.</code>，可以绕过后缀检查。</p>
-<p>也可尝试 <code>index.php `</code>，<code></code>index.php:1.jpg<code></code>index.php::$DATA` 等。 </p>
+<p>也可尝试 <code>index.php ``，``index.php:1.jpg</code> <code>index.php::$DATA</code> 等。 </p>
 <p>在<strong>Linux系统</strong>中，可以尝试上传名为 <code>index.php/.</code> 或 <code>./aa/../index.php/.</code> 的文件</p>
 </blockquote>
 <h3 id="user-ini"><a href="#user-ini" class="headerlink" title="| .user.ini"></a>| .user.ini</h3><blockquote>
@@ -442,12 +444,11 @@
 <h3 id="配合操作系统文件命令规则"><a href="#配合操作系统文件命令规则" class="headerlink" title="|配合操作系统文件命令规则"></a>|配合操作系统文件命令规则</h3><blockquote>
 <p>（1）上传不符合<strong>windows</strong>文件命名规则的文件名<br>　　test.asp.<br>　　test.asp(空格)<br>　　test.php:1.jpg<br>　　test.php::$DATA<br>　　shell.php::$DATA…….<br>会被windows系统自动去掉不符合规则符号后面的内容。<br>（2）<strong>linux</strong>下后缀名大小写<br>在linux下，如果上传php不被解析，可以试试上传pHp后缀的文件名。</p>
 </blockquote>
-<p>#### </p>
-<h2 id="解析漏洞"><a href="#解析漏洞" class="headerlink" title="|解析漏洞"></a>|解析漏洞</h2><p><img src="/2019/04/07/WebSec-文件上传/./解析漏洞.jpg" alt="图示"></p>
+<h4 id><a href="#" class="headerlink" title=" "></a> </h4><h2 id="解析漏洞"><a href="#解析漏洞" class="headerlink" title="|解析漏洞"></a>|解析漏洞</h2><p><img src="/2019/04/07/WebSec-文件上传/./解析漏洞.jpg" alt="图示"></p>
 <h3 id="IIS系列"><a href="#IIS系列" class="headerlink" title="|IIS系列"></a>|IIS系列</h3><p>   ||</p>
 <p>   ||</p>
-<p>\        /</p>
-<p>   \  /</p>
+<p>        /</p>
+<p>     /</p>
 <h4 id="IIS5-x-6-x解析漏洞"><a href="#IIS5-x-6-x解析漏洞" class="headerlink" title="|IIS5.x-6.x解析漏洞"></a>|IIS5.x-6.x解析漏洞</h4><p>可能被IIS当做asp程序执行的后缀有：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.asp</span><br><span class="line">.cer</span><br><span class="line">.asa</span><br><span class="line">.cdx</span><br></pre></td></tr></table></figure>
 <h4 id="IIS-6-0-文件解析漏洞"><a href="#IIS-6-0-文件解析漏洞" class="headerlink" title="|IIS 6.0 文件解析漏洞"></a>|IIS 6.0 文件解析漏洞</h4><p>备注：IIS5.1和IIS7.5无此漏洞。</p>
@@ -487,9 +488,9 @@
 <p><img src="/2019/04/07/WebSec-文件上传/./20140706214035015.jpg" alt="img"></p>
 </blockquote>
 <h3 id="apache解析漏洞"><a href="#apache解析漏洞" class="headerlink" title="|apache解析漏洞"></a>|apache解析漏洞</h3><p><strong>漏洞原理</strong>：Apache 解析文件的规则是从右到左开始判断解析,如果后缀名为不可识别文件解析,就再往左判断。比如 test.php.owf.rar “.owf”和”.rar” 这两种后缀是apache不可识别解析,apache就会把wooyun.php.owf.rar解析成php。</p>
-<p><strong>漏洞形式</strong>：<a href="http://www.xxxx.xxx.com/test.php.php123" target="_blank" rel="noopener">www.xxxx.xxx.com/test.php.php123</a></p>
+<p><strong>漏洞形式</strong>：www.xxxx.xxx.com/test.php.php123</p>
 <p><strong>其余配置问题导致漏洞</strong>：（1）如果在 Apache 的 conf 里有这样一行配置 AddHandler php5-script .php 这时只要文件名里包含.php 即使文件名是 test2.php.jpg 也会以 php 来执行。<br>（2）如果在 Apache 的 conf 里有这样一行配置 AddType application/x-httpd-php .jpg 即使扩展名是 jpg，一样能以 php 方式执行。</p>
-<h3 id="nginx解析漏洞"><a href="#nginx解析漏洞" class="headerlink" title="|nginx解析漏洞"></a>|nginx解析漏洞</h3><p><strong>漏洞原理：</strong>Nginx默认是以CGI的方式支持PHP解析的，普遍的做法是在Nginx配置文件中通过正则匹配设置SCRIPT_FILENAME。当访问<a href="http://www.xx.com/phpinfo.jpg/1.php这个URL时，$fastcgi_script_name会被设置为“phpinfo.jpg/1.php”，然后构造成SCRIPT_FILENAME传递给PHP" target="_blank" rel="noopener">www.xx.com/phpinfo.jpg/1.php这个URL时，$fastcgi_script_name会被设置为“phpinfo.jpg/1.php”，然后构造成SCRIPT_FILENAME传递给PHP</a> CGI，但是PHP为什么会接受这样的参数，并将phpinfo.jpg作为PHP文件解析呢?这就要说到<strong>fix_pathinfo</strong>这个选项了。 如果开启了这个选项，那么就会触发在PHP中的如下逻辑：</p>
+<h3 id="nginx解析漏洞"><a href="#nginx解析漏洞" class="headerlink" title="|nginx解析漏洞"></a>|nginx解析漏洞</h3><p><strong>漏洞原理：</strong>Nginx默认是以CGI的方式支持PHP解析的，普遍的做法是在Nginx配置文件中通过正则匹配设置SCRIPT_FILENAME。当访问www.xx.com/phpinfo.jpg/1.php这个URL时，$fastcgi_script_name会被设置为“phpinfo.jpg/1.php”，然后构造成SCRIPT_FILENAME传递给PHP CGI，但是PHP为什么会接受这样的参数，并将phpinfo.jpg作为PHP文件解析呢?这就要说到<strong>fix_pathinfo</strong>这个选项了。 如果开启了这个选项，那么就会触发在PHP中的如下逻辑：</p>
 <p>PHP会认为SCRIPT_FILENAME是phpinfo.jpg，而1.php是PATH_INFO，所以就会将phpinfo.jpg作为PHP文件来解析了</p>
 <p><strong>漏洞形式：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">www.xxxx.com/UploadFiles/image/1.jpg/1.php</span><br><span class="line">www.xxxx.com/UploadFiles/image/1.jpg%00.php</span><br><span class="line">www.xxxx.com/UploadFiles/image/1.jpg/%20\0.php</span><br></pre></td></tr></table></figure>
@@ -707,7 +708,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#WebSec–文件上传"><span class="nav-number">1.</span> <span class="nav-text">|WebSec–文件上传</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件类型检测绕过"><span class="nav-number">1.1.</span> <span class="nav-text">|文件类型检测绕过</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更改请求绕过"><span class="nav-number">1.1.1.</span> <span class="nav-text">|更改请求绕过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Magic检测绕过"><span class="nav-number">1.1.2.</span> <span class="nav-text">|Magic检测绕过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后缀绕过"><span class="nav-number">1.1.3.</span> <span class="nav-text">|后缀绕过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统命名绕过"><span class="nav-number">1.1.4.</span> <span class="nav-text">|系统命名绕过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#user-ini"><span class="nav-number">1.1.5.</span> <span class="nav-text">| .user.ini</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件包含"><span class="nav-number">1.1.6.</span> <span class="nav-text">|文件包含</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配合操作系统文件命令规则"><span class="nav-number">1.1.7.</span> <span class="nav-text">|配合操作系统文件命令规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解析漏洞"><span class="nav-number">1.2.</span> <span class="nav-text">|解析漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#IIS系列"><span class="nav-number">1.2.1.</span> <span class="nav-text">|IIS系列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#IIS5-x-6-x解析漏洞"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">|IIS5.x-6.x解析漏洞</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#IIS-6-0-文件解析漏洞"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">|IIS 6.0 文件解析漏洞</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#IIS7-amp-7-5解析漏洞"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">|IIS7&amp;7.5解析漏洞</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#apache解析漏洞"><span class="nav-number">1.2.2.</span> <span class="nav-text">|apache解析漏洞</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx解析漏洞"><span class="nav-number">1.2.3.</span> <span class="nav-text">|nginx解析漏洞</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#竞争上传绕过"><span class="nav-number">1.2.4.</span> <span class="nav-text">|竞争上传绕过</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#攻击技巧"><span class="nav-number">1.3.</span> <span class="nav-text">|攻击技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Apache重写GetShell"><span class="nav-number">1.3.1.</span> <span class="nav-text">|Apache重写GetShell</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软链接任意读文件"><span class="nav-number">1.3.2.</span> <span class="nav-text">|软链接任意读文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FUZZ"><span class="nav-number">1.4.</span> <span class="nav-text">|FUZZ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">1.5.</span> <span class="nav-text">|参考链接</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#WebSec—文件上传"><span class="nav-number">1.</span> <span class="nav-text">|WebSec—文件上传</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件类型检测绕过"><span class="nav-number">1.1.</span> <span class="nav-text">|文件类型检测绕过</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更改请求绕过"><span class="nav-number">1.1.1.</span> <span class="nav-text">|更改请求绕过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Magic检测绕过"><span class="nav-number">1.1.2.</span> <span class="nav-text">|Magic检测绕过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后缀绕过"><span class="nav-number">1.1.3.</span> <span class="nav-text">|后缀绕过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统命名绕过"><span class="nav-number">1.1.4.</span> <span class="nav-text">|系统命名绕过</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#user-ini"><span class="nav-number">1.1.5.</span> <span class="nav-text">| .user.ini</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件包含"><span class="nav-number">1.1.6.</span> <span class="nav-text">|文件包含</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配合操作系统文件命令规则"><span class="nav-number">1.1.7.</span> <span class="nav-text">|配合操作系统文件命令规则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#"><span class="nav-number">1.1.7.1.</span> <span class="nav-text"> </span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解析漏洞"><span class="nav-number">1.2.</span> <span class="nav-text">|解析漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#IIS系列"><span class="nav-number">1.2.1.</span> <span class="nav-text">|IIS系列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#IIS5-x-6-x解析漏洞"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">|IIS5.x-6.x解析漏洞</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#IIS-6-0-文件解析漏洞"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">|IIS 6.0 文件解析漏洞</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#IIS7-amp-7-5解析漏洞"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">|IIS7&amp;7.5解析漏洞</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#apache解析漏洞"><span class="nav-number">1.2.2.</span> <span class="nav-text">|apache解析漏洞</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx解析漏洞"><span class="nav-number">1.2.3.</span> <span class="nav-text">|nginx解析漏洞</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#竞争上传绕过"><span class="nav-number">1.2.4.</span> <span class="nav-text">|竞争上传绕过</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#攻击技巧"><span class="nav-number">1.3.</span> <span class="nav-text">|攻击技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Apache重写GetShell"><span class="nav-number">1.3.1.</span> <span class="nav-text">|Apache重写GetShell</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软链接任意读文件"><span class="nav-number">1.3.2.</span> <span class="nav-text">|软链接任意读文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FUZZ"><span class="nav-number">1.4.</span> <span class="nav-text">|FUZZ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">1.5.</span> <span class="nav-text">|参考链接</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -941,6 +942,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

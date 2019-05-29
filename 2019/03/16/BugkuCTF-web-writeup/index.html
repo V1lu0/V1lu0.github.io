@@ -535,7 +535,7 @@
 <p>2.右键源代码，将JSfuck代码扔进F12控制台</p>
 </blockquote>
 <p><img src="/2019/03/16/BugkuCTF-web-writeup/30.png" alt="img"></p>
-<p>2.<a href="https://www.baidu.com/s?wd=js%E8%84%9A%E6%9C%AC&amp;tn=24004469_oem_dg&amp;rsv_dl=gh_pl_sl_csd" target="_blank" rel="noopener">js脚本</a>，直接—&gt;F12—&gt;consol 复制进去，输出</p>
+<p>2.<a href="https://www.baidu.com/s?wd=js%E8%84%9A%E6%9C%AC&amp;tn=24004469_oem_dg&amp;rsv_dl=gh_pl_sl_csd" target="_blank" rel="noopener">js脚本</a>，直接—-&gt;F12—-&gt;consol 复制进去，输出</p>
 <p><img src="/2019/03/16/BugkuCTF-web-writeup/31.png" alt="img"></p>
 <p>3.得到flag，注意题目提交要求</p>
 <p>4.JSFUCK原理解析：</p>
@@ -979,6 +979,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
