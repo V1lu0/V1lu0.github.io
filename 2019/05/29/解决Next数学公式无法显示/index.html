@@ -79,14 +79,17 @@
 
 
 
+<meta name="description" content="123&amp;lt;!--因为在hexo写文章的时候遇到了这个坑，所以转载一篇我觉得蛮好的解决方法--&amp;gt;&amp;lt;!--本文转自  https://www.jianshu.com/p/e8d433a2c5b7  --&amp;gt;  在 hexo 中，你会发现我们不能用 Latex 语法来书写数学公式，这对于书写学术博客来说是很大的不便，因为我们会经常碰到很多的数学公式推导，但是我们可以通过安装第三方库来">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1">
-<meta property="og:url" content="https://v1lu0.github.io/2019/05/08/1/index.html">
+<meta property="og:title" content="Next解决数学公式无法显示">
+<meta property="og:url" content="https://v1lu0.github.io/2019/05/29/解决Next数学公式无法显示/index.html">
 <meta property="og:site_name" content="V1lu0&#39;blog">
+<meta property="og:description" content="123&amp;lt;!--因为在hexo写文章的时候遇到了这个坑，所以转载一篇我觉得蛮好的解决方法--&amp;gt;&amp;lt;!--本文转自  https://www.jianshu.com/p/e8d433a2c5b7  --&amp;gt;  在 hexo 中，你会发现我们不能用 Latex 语法来书写数学公式，这对于书写学术博客来说是很大的不便，因为我们会经常碰到很多的数学公式推导，但是我们可以通过安装第三方库来">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-08T06:23:56.111Z">
+<meta property="og:updated_time" content="2019-05-29T02:04:26.891Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1">
+<meta name="twitter:title" content="Next解决数学公式无法显示">
+<meta name="twitter:description" content="123&amp;lt;!--因为在hexo写文章的时候遇到了这个坑，所以转载一篇我觉得蛮好的解决方法--&amp;gt;&amp;lt;!--本文转自  https://www.jianshu.com/p/e8d433a2c5b7  --&amp;gt;  在 hexo 中，你会发现我们不能用 Latex 语法来书写数学公式，这对于书写学术博客来说是很大的不便，因为我们会经常碰到很多的数学公式推导，但是我们可以通过安装第三方库来">
 
 
 
@@ -116,7 +119,7 @@
 
 
 
-  <link rel="canonical" href="https://v1lu0.github.io/2019/05/08/1/">
+  <link rel="canonical" href="https://v1lu0.github.io/2019/05/29/解决Next数学公式无法显示/">
 
 
 
@@ -131,7 +134,7 @@
         }
     })();
 </script>
-  <title>1 | V1lu0'blog</title>
+  <title>Next解决数学公式无法显示 | V1lu0'blog</title>
   
 
 
@@ -259,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://v1lu0.github.io/2019/05/08/1/">
+    <link itemprop="mainEntityOfPage" href="https://v1lu0.github.io/2019/05/29/解决Next数学公式无法显示/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="V1lu0">
@@ -276,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">1</h1>
+          <h1 class="post-title" itemprop="name headline">Next解决数学公式无法显示</h1>
         
 
         <div class="post-meta">
@@ -288,8 +291,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-08T14:23:56+08:00">
-                2019-05-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-29T09:55:41+08:00">
+                2019-05-29
               </time>
             
 
@@ -331,7 +334,38 @@
       
 
       
-        
+        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--因为在hexo写文章的时候遇到了这个坑，所以转载一篇我觉得蛮好的解决方法--&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--本文转自  https:<span class="comment">//www.jianshu.com/p/e8d433a2c5b7  --&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在 hexo 中，你会发现我们不能用 <code>Latex</code> 语法来书写数学公式，这对于书写学术博客来说是很大的不便，因为我们会经常碰到很多的数学公式推导，但是我们可以通过安装第三方库来解决这一问题。</p>
+</blockquote>
+<h2 id="第一步：-使用Kramed代替-Marked"><a href="#第一步：-使用Kramed代替-Marked" class="headerlink" title="第一步： 使用Kramed代替 Marked"></a>第一步： 使用Kramed代替 Marked</h2><p><code>hexo</code> 默认的渲染引擎是 <code>marked</code>，但是 <code>marked</code> 不支持 <code>mathjax</code>。 <code>kramed</code> 是在 <code>marked</code> 的基础上进行修改。我们在工程目录下执行以下命令来安装 <code>kramed</code>.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure>
+<p>然后，更改<your-project-dir>/node_modules/hexo-renderer-kramed/lib/renderer.js，更改：</your-project-dir></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Change inline math rule</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">formatText</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// Fit kramed's rule: $$ + \1 + $$</span></span><br><span class="line">    <span class="keyword">return</span> text.replace(<span class="regexp">/`\$(.*?)\$`/g</span>, <span class="string">'$$$$$1$$$$'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Change inline math rule</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">formatText</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> text;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="第二步-停止使用-hexo-math"><a href="#第二步-停止使用-hexo-math" class="headerlink" title="第二步: 停止使用 hexo-math"></a>第二步: 停止使用 hexo-math</h2><p>首先，如果你已经安装 <code>hexo-math</code>, 请卸载它：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-math --save</span><br></pre></td></tr></table></figure>
+<p>然后安装 <a href="https://link.jianshu.com?t=https://github.com/phoenixcw/hexo-renderer-mathjax" target="_blank" rel="noopener">hexo-renderer-mathjax</a> 包：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-mathjax --save</span><br></pre></td></tr></table></figure>
+<h2 id="第三步-更新-Mathjax-的-CDN-链接"><a href="#第三步-更新-Mathjax-的-CDN-链接" class="headerlink" title="第三步: 更新 Mathjax 的 CDN 链接"></a>第三步: 更新 Mathjax 的 CDN 链接</h2><p>首先，打开<path-to-your-project>/node_modules/hexo-renderer-mathjax/mathjax.html</path-to-your-project></p>
+<p>然后，把<code>&lt;script&gt;</code>更改为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="第四步-更改默认转义规则"><a href="#第四步-更改默认转义规则" class="headerlink" title="第四步: 更改默认转义规则"></a>第四步: 更改默认转义规则</h2><p>因为 <code>hexo</code> 默认的转义规则会将一些字符进行转义，比如 <code>_</code> 转为 <code>&lt;em&gt;</code>, 所以我们需要对默认的规则进行修改.<br> 首先， 打开&lt;path-to-your-project/node_modules/kramed/lib/rules、inline.js,</p>
+<p>然后，把:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">escape</span>: <span class="regexp">/^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/</span>,</span><br></pre></td></tr></table></figure>
+<p>更改为:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">escape</span>: <span class="regexp">/^\\([`*\[\]()# +\-.!_&gt;])/</span>,</span><br></pre></td></tr></table></figure>
+<p>把</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">em: <span class="regexp">/^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span>,</span><br></pre></td></tr></table></figure>
+<p>更改为:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">em: <span class="regexp">/^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span>,</span><br></pre></td></tr></table></figure>
+<h2 id="第五步-开启mathjax"><a href="#第五步-开启mathjax" class="headerlink" title="第五步: 开启mathjax"></a>第五步: 开启mathjax</h2><p>在主题 <code>_config.yml</code> 中开启 Mathjax， 找到 <code>mathjax</code> 字段添加如下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">    enable: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>这一步可选，在博客中开启 <code>Mathjax</code>，， 添加以下内容：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Testing Mathjax <span class="keyword">with</span> Hexo</span><br><span class="line">category: Uncategorized</span><br><span class="line">date: <span class="number">2017</span>/<span class="number">05</span>/<span class="number">03</span></span><br><span class="line">mathjax: <span class="literal">true</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>通过以上步骤，我们就可以在 <code>hexo</code> 中使用 <code>Mathjax</code> 来书写数学公式。</p>
+
       
     </div>
     
@@ -355,8 +389,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/07/WebSec-文件上传/" rel="next" title="WebSec--文件上传">
-                <i class="fa fa-chevron-left"></i> WebSec--文件上传
+              <a href="/2019/05/28/通信原理之信息度量/" rel="next" title="通信原理之信息度量">
+                <i class="fa fa-chevron-left"></i> 通信原理之信息度量
               </a>
             
           </div>
@@ -415,8 +449,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -433,7 +476,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -444,7 +487,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -455,7 +498,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -494,6 +537,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一步：-使用Kramed代替-Marked"><span class="nav-number">1.</span> <span class="nav-text">第一步： 使用Kramed代替 Marked</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二步-停止使用-hexo-math"><span class="nav-number">2.</span> <span class="nav-text">第二步: 停止使用 hexo-math</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三步-更新-Mathjax-的-CDN-链接"><span class="nav-number">3.</span> <span class="nav-text">第三步: 更新 Mathjax 的 CDN 链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第四步-更改默认转义规则"><span class="nav-number">4.</span> <span class="nav-text">第四步: 更改默认转义规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五步-开启mathjax"><span class="nav-number">5.</span> <span class="nav-text">第五步: 开启mathjax</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -722,6 +781,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
