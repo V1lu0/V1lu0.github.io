@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="V1lu0&#39;blog">
 <meta property="og:description" content="|当IPv6遇上SSRF-奇淫技巧  	      	    里面有一个xip.io有点意思,我们可以关注一下： [+]绕过SSRF限制  比如SSRF你要读取内网地址，一般都做了限制，可以尝试用这方法进行绕过限制，从而访问到内网。 http://www.127.0.0.1.xip.io/=http://127.0.0.1/ 还有一些上面pdf很详细了  [+]url跳转的利用  用xip.io构">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-25T00:27:32.794Z">
+<meta property="og:updated_time" content="2019-06-25T00:31:33.388Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="当IPv6遇上SSRF-奇淫技巧">
 <meta name="twitter:description" content="|当IPv6遇上SSRF-奇淫技巧  	      	    里面有一个xip.io有点意思,我们可以关注一下： [+]绕过SSRF限制  比如SSRF你要读取内网地址，一般都做了限制，可以尝试用这方法进行绕过限制，从而访问到内网。 http://www.127.0.0.1.xip.io/=http://127.0.0.1/ 还有一些上面pdf很详细了  [+]url跳转的利用  用xip.io构">
@@ -369,11 +369,11 @@
 <p><strong>[+]绕过SSRF限制</strong></p>
 <blockquote>
 <p>比如SSRF你要读取内网地址，一般都做了限制，可以尝试用这方法进行绕过限制，从而访问到内网。</p>
-<p><a href="http://www.127.0.0.1.xip.io/" target="_blank" rel="noopener">http://www.127.0.0.1.xip.io/</a>=<a href="http://127.0.0.1/" target="_blank" rel="noopener">http://127.0.0.1/</a> 还有一些上面pdf很详细了</p>
+<p><strong><a href="http://www.127.0.0.1.xip.io/" target="_blank" rel="noopener">http://www.127.0.0.1.xip.io/</a></strong>=<strong><a href="http://127.0.0.1/" target="_blank" rel="noopener">http://127.0.0.1/</a></strong> 还有一些上面pdf很详细了</p>
 </blockquote>
 <p><strong>[+]url跳转的利用</strong></p>
 <blockquote>
-<p>用xip.io构造url跳转<a href="http://www.xxx.com.111.222.33.444.xip.io当你访问www.xxx.com这个域名时，其实这个链接已经被解析到后面这个ip地址(111.222.33.444)上了，那么实际访问的就是后面这个IP地址(111.222.33.444)。" target="_blank" rel="noopener">http://www.xxx.com.111.222.33.444.xip.io当你访问www.xxx.com这个域名时，其实这个链接已经被解析到后面这个ip地址(111.222.33.444)上了，那么实际访问的就是后面这个IP地址(111.222.33.444)。</a></p>
+<p>用xip.io构造url跳转<strong><a href="http://www.xxx.com.111.222.33.444.xip.io" target="_blank" rel="noopener">http://www.xxx.com.111.222.33.444.xip.io</a></strong>当你访问<strong>www.xxx.com</strong>这个域名时，其实这个链接已经被解析到后面这个ip地址(<strong>111.222.33.444</strong>)上了，那么实际访问的就是后面这个IP地址(<strong>111.222.33.444</strong>)。</p>
 </blockquote>
 
       
